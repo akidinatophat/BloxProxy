@@ -7,7 +7,12 @@ BloxProxy is yet another Roblox API Proxy for HttpService with 3 things in mind:
 With BloxProxy, say goodbye to dealing with Node.JS and NPM, and long live the hassle of Heroku deployments. All you need is to edit, add, and reload.
 If you want to add another Roblox API to BloxProxy, just copy and paste the location directive, edit the url, and reload NGINX. It's that easy.
 
-# Prerequisites
+# Current API list
+https://api.bloxproxy.site - Main API
+https://api2.bloxproxy.site - Testing API - unstable
+Do NOT use these in a production enviroment!
+
+# Prerequisites for installation
 You'll need the following to install BloxProxy:
 - A Linux machine with a public IP(VPS Recommended)
 - A domain name(you can get one at freenom)
