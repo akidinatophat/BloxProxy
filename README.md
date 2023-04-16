@@ -24,7 +24,7 @@ sudo apt install -y nginx certbot
 
 # Verify nginx is installed
 nginx -v
-Expected output: nginx version: nginx/1.XX.X
+# Expected output: nginx version: nginx/1.XX.X
 
 # Assuming you already have an available domain name, go to your registrar's DNS settings, then add an A record which points to your machine's Public IP Address(you can get it by running "curl https://ipv4.myip.wtf/text").
 
@@ -38,5 +38,27 @@ sudo certbot certonly --standalone -d <your domain>
 # Ensure you enter a valid email for urgent notifications about your certificate.
 
 # After certbot gives you your certificate, clone the repo
+git clone https://github.com/akidinatophat/BloxProxy.git
 
+# Copy snippets folder
+sudo cp -r ./BloxProxy/snippets/ /etc/nginx/
+
+# Edit nginx.conf
+sudo nano /etc/nginx/nginx.conf
+# Add the following line anywhere in the http directive:
+# include /etc/nginx/snippets/bloxproxy.conf;
+
+# Edit your bloxproxy config
+sudo nano /etc/nginx/snippets/bloxproxy.conf
+# !! Make sure you change your server name and set your https certificate !!
+
+# Make sure no errors are in the configs
+nginx -t
+# Expected output: 
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+# Restart NGINX
+sudo systemctl restart nginx
 ```
+Congratulations! You've successfully deployed your own BloxProxy server. You can test it out by using the example url's below.
