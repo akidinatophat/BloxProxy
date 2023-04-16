@@ -8,3 +8,7 @@ With BloxProxy, say goodbye to dealing with Node.JS and NPM, and long live the h
 If you want to add another Roblox API to BloxProxy, just copy and paste the location directive, edit the url, and reload NGINX. It's that easy.
 
 # Installation
+This tutorial is meant for Ubuntu Server. Installing NGINX is different for every distro.
+
+# Step 1: Install NGINX
+```sudo apt update```
