@@ -12,7 +12,7 @@ https://api.bloxproxy.site - Main API
 
 https://api2.bloxproxy.site - Testing API - unstable
 
-Do NOT use these in a production enviroment!
+Do NOT use these in a production enviroment! [Read this to know why.](https://devforum.roblox.com/t/psa-stop-using-roblox-proxies/1573256)
 
 # Prerequisites for installation
 You'll need the following to install BloxProxy:
