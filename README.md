@@ -8,8 +8,8 @@ With BloxProxy, say goodbye to dealing with Node.JS and NPM, and long live the h
 If you want to add another Roblox API to BloxProxy, just copy and paste the location directive, edit the url, and reload NGINX. It's that easy.
 
 # Current API list
-https://api.bloxproxy.site - Main API
-https://api2.bloxproxy.site - Testing API - unstable
+https://api.bloxproxy.site - Main API\n
+https://api2.bloxproxy.site - Testing API - unstable\n
 Do NOT use these in a production enviroment!
 
 # Prerequisites for installation
