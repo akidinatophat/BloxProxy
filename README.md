@@ -10,5 +10,6 @@ If you want to add another Roblox API to BloxProxy, just copy and paste the loca
 # Installation
 This tutorial is meant for Ubuntu Server. Installing NGINX is different for every distro.
 
-# Step 1: Install NGINX
-```sudo apt update```
+# Step 1: Install packages
+Run ```sudo apt update``` to update your repos. Then paste the following:
+```sudo apt install nginx certbot```
