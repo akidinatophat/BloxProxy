@@ -30,7 +30,7 @@ nginx -v
 
 # Stop NGINX service for now
 sudo systemctl stop nginx
-pkill nginx
+sudo pkill nginx
 
 # Get an SSL Certificate
 sudo certbot certonly --standalone -d <your domain>
@@ -45,7 +45,7 @@ sudo cp -r ./BloxProxy/snippets/ /etc/nginx/
 
 # Edit nginx.conf
 sudo nano /etc/nginx/nginx.conf
-# Add the following line anywhere in the http directive:
+# Add the following line at the bottom of the http directive:
 # include /etc/nginx/snippets/bloxproxy.conf;
 
 # Edit your bloxproxy config
